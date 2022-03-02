@@ -1,0 +1,17 @@
+0000 JP [MAIN] ; Pula para o inicio do programa
+
+; ===================   DADOS  ==================
+varX: 0010 K 2 ; Variavel X
+varY: 0012 K 4 ; Variavel Y
+varR: 0014 K 0 ; Variavel R
+
+; =================== PROGRAMA ==================
+
+MAIN: 0100 LD [varX] ; X
+           AD [varY] ; +Y
+           MM [varR] ; Salva X+Y em R
+
+END: HM [END]
+           
+
+
